@@ -11,7 +11,7 @@ app.post("/send",(req,res) => {
 	let phone = req.body.phone; 
 	let query = req.body.query;
 	
-	let txt = "name" + name + "phone" + phone + "query" + query;
+	let txt = "Name : " + name + "\n" + "Phone Number : " + phone + "\n" + "Query : " + query;
 
 	let transporter = nodemailer.createTransport({
 		service:"gmail",
